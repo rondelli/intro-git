@@ -1,0 +1,126 @@
+Introducción Rápida y Furiosa a Git
+Programación I
+
+Hernán Rondelli
+Universidad Nacional de General Sarmiento
+lucifer.unix.cabj@gmail.com
+
+* bit.do/ungs-intro-git
+
+.image img/ungs-intro-git.png
+
+* Por qué Introducción Rápida y Furiosa?
+
+* Cómo instalar Git
+
+Web oficial:
+
+.link https://git-scm.com/downloads
+
+Linux (Debian y derivados):
+
+ # apt-get install git git-gui
+
+macOS (con Homebrew):
+
+ $ brew install git git-gui
+
+Windows:
+
+- Bajar 32-bit Git ó 64-bit Git
+- Elegir *Checkout*as-is,*commit*Unix-style*line*endings*
+- El resto todo "aceptar"
+
+* Cómo instalar Git
+
+- Linux y macOS:
+
+ $ git --version
+ git version 2.28.0
+
+- Windows:
+
+Ejecutar la aplicación *Git*Bash*
+
+ shinji@ikariLOSER ~
+ $ git --version
+ git version 2.28.0
+
+* Cómo configurar Git
+
+En una terminal:
+
+ $ git config --global user.name "Juan Carlos Olave"
+ $ git config --global user.email "belgrano@promocion.com"
+
+* Para qué sirve Git?
+
+* Un cacho de disco rígido en la nube 😸
+
+* GitLab un "Google Drive" pero para programadores
+
+.link https://gitlab.com
+
+* No confundir Git con GitLab!
+
+* Cómo usamos GitLab con Git
+
+.link https://gitlab.com
+
+1. Crear una nueva cuenta en GitLab
+2. Confirmar el email
+3. Empezar a usar GitLab
+
+.image img/new-project.png 600 _
+
+# empty title
+* 
+
+.image img/mi-primer-proyecto.png 620 _
+
+* Copiar la URL del repo
+
+.image img/clone.png 600 _
+
+# empty title
+* 
+
+Clonar el repo:
+
+ ~ $ git clone https://gitlab.com/hdr/mi-primer-proyecto.git
+ Cloning into 'mi-primer-proyecto'...
+ Username for 'https://gitlab.com': hdr
+ Password for 'https://hdr@gitlab.com': 
+ warning: You appear to have cloned an empty repository.
+
+Meterse en el directorio del repo:
+
+ ~ $ cd mi-primer-proyecto/
+ ~ mi-primer-proyecto $ pwd
+ /Users/lucifer/mi-primer-proyecto
+
+Subir cosas al repo:
+
+ ~ mi-primer-proyecto $ git add .
+ ~ mi-primer-proyecto $ git commit -m "Mensaje descriptivo"
+ ~ mi-primer-proyecto $ git push -u origin master
+
+# empty title
+* 
+
+.image img/initial-commit.png 620 _
+
+* One more thing…
+
+ ~ mi-primer-proyecto $ git pull
+
+* Más info
+
+.link https://en.wikipedia.org/wiki/Git
+
+.link https://git-scm.com/doc git-scm.com/doc
+
+# empty title
+* 
+
+.image img/questions.png
